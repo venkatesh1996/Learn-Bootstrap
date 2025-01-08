@@ -9,34 +9,61 @@
     <title>collapse</title>
   </head>
   <body>
-    <p class="d-inline-flex gap-1">
-      <a
-        class="btn btn-primary"
-        data-bs-toggle="collapse"
-        href="#collapseExample"
-        role="button"
-        aria-expanded="false"
-        aria-controls="collapseExample"
+    <p class="muted">
+      Placeholder text to demonstrate some
+      <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip"
+        >inline links</a
       >
-        Link with href
-      </a>
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseExample"
-        aria-expanded="false"
-        aria-controls="collapseExample"
+      with tooltips. This is now just filler, no killer. Content placed here
+      just to mimic the presence of
+      <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip"
+        >real text</a
+      >. And all that just to give you an idea of how tooltips would look when
+      used in real-world situations. So hopefully you've now seen how
+      <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too"
+        >these tooltips on links</a
       >
-        Button with data-bs-target
-      </button>
+      can work in practice, once you use them on
+      <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!"
+        >your own</a
+      >
+      site or project.
     </p>
-    <div class="collapse" id="collapseExample">
-      <div class="card card-body">
-        Some placeholder content for the collapse component. This panel is
-        hidden by default but revealed when the user activates the relevant
-        trigger.
-      </div>
-    </div>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-title="Tooltip on top"
+    >
+      Tooltip on top
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-title="Tooltip on right"
+    >
+      Tooltip on right
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="bottom"
+      data-bs-title="Tooltip on bottom"
+    >
+      Tooltip on bottom
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      data-bs-title="Tooltip on left"
+    >
+      Tooltip on left
+    </button>
   </body>
 </html>
