@@ -7,6 +7,18 @@
       rel="stylesheet"
     />
     <title>collapse</title>
+    <script type="text/javascript">
+      const toastTrigger = document.getElementById("liveToastBtn");
+      const toastLiveExample = document.getElementById("liveToast");
+
+      if (toastTrigger) {
+        const toastBootstrap =
+          bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+        toastTrigger.addEventListener("click", () => {
+          toastBootstrap.show();
+        });
+      }
+    </script>
   </head>
   <body>
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -47,6 +59,23 @@
           ></button>
         </div>
         <div class="toast-body">Hello, world! This is a toast message.</div>
+      </div>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+        <div class="mt-2 pt-2 border-top">
+          <button type="button" class="btn btn-primary btn-sm">
+            Take action
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary btn-sm"
+            data-bs-dismiss="toast"
+          >
+            Close
+          </button>
+        </div>
       </div>
     </div>
   </body>
